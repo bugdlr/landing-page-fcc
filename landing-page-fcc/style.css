@@ -1,0 +1,57 @@
+/*Note: MOBILE: FIRST!!!;*/
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;`
+}
+
+body {
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  /*z-index: 2;*/
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  font-size: 20px;
+  background-color: inherit;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+h1 {
+  margin: 80px 0px 20px 0px;
+}
+
+input {
+  display: block;
+  margin: 15px auto;
+  font-size: 16px;
+}
+
+#email {
+  width: 300px;
+  padding: 8px;
+}
+
+#submit {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FFB733;
+  border: 0;
+}
