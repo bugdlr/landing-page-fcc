@@ -58,12 +58,18 @@ input {
 .features {
   width: 400px;
   margin: 50px auto;
+  vertical-align: top;
+}
+
+.feature {
+  margin: 20px auto;
 }
 
 .claims {
   display: inline-block;
   text-align: left;
   margin: 10px auto;
+  vertical-align: top;
 }
 
 h2 {
@@ -76,10 +82,9 @@ h2 {
 
 .icons {
   display: inline-block;
-  margin-right: 20px;
-  height: 40px;
-  width: 40px;
-  fill: #FFB733;
+  margin: 10px 20px;
+  height: 60px;
+  width: 60px;
 }
 
 .shipping {
