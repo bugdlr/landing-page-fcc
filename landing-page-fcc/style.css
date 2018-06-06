@@ -23,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
+  margin-bottom: 20px;
   font-size: 20px;
   background-color: inherit;
 }
@@ -55,7 +56,7 @@ h1 {
 
 input {
   display: block;
-  margin: 15px auto;
+  margin: 25px auto;
   font-size: 16px;
 }
 
@@ -113,7 +114,59 @@ h2 {
   padding-right: 50px;
 }
 
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.product {
+  border: 1px solid black;
+  width: 250px;
+  height: 300px;
+}
+
+.product-name {
+  background-color: #d3d3d3;
+  padding: 10px;
+  width: 100%;
+}
+
+.price {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.description {
+  width: 50%;
+  height: 125px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #FFB733;
+}
+
 /*MEDIA QUERIES*/
+
+@media (max-width: 750px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    margin-bottom: 50px;
+  }
+}
+
 
 @media (max-width: 580px) {
 
@@ -135,6 +188,5 @@ h2 {
   .icons {
     display: none;
   }
-
 
 }
