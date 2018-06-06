@@ -22,8 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
-  margin-bottom: 20px;
+  padding: 40px 50px;
   font-size: 20px;
   background-color: inherit;
 }
@@ -39,9 +38,9 @@ header img {
 }
 
 .company-name {
-  font-family: cursive;
   text-transform: uppercase;
   font-size: 24px;
+  padding-top: 6px;
 }
 
 header a {
@@ -194,7 +193,37 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
+  body {
+    margin-top: 160px;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  header a {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+  }
+
+  .company-name {
+    text-align: left;
+  }
+
+  .logo {
+    justify-content: center;
+    padding-bottom: 10px;
+   }
+
+   h1 {
+     padding: 10px;
+   }
+
   .pricing {
     flex-direction: column;
     align-items: center;
@@ -203,13 +232,15 @@ footer {
   .product {
     margin-bottom: 50px;
   }
+
+  #video {
+    width: 100vw;
+    height: 56.25vw;
+  }
 }
 
-
-@media (max-width: 580px) {
-
+@media (max-width: 600px) {
   .features {
-    display: block;
     width: 100%;
     text-align: center;
   }
@@ -226,5 +257,15 @@ footer {
   .icons {
     display: none;
   }
+}
 
+@media (max-width: 350px) {
+  .logo {
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  body {
+    margin-top: 180px;
+  }
 }
