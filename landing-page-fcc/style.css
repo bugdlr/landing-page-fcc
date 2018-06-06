@@ -5,12 +5,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;`
+  padding: 0;
 }
 
 body {
   background-color: #F0F0F0;
   text-align: center;
+  font-family: arial;
 }
 
 header {
@@ -24,6 +25,22 @@ header {
   padding: 10px 50px;
   font-size: 20px;
   background-color: inherit;
+}
+
+.logo {
+  display: flex;
+}
+
+header img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-family: cursive;
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
 header a {
@@ -56,7 +73,7 @@ input {
 }
 
 .features {
-  width: 400px;
+  max-width: 1000px;
   margin: 50px auto;
   vertical-align: top;
 }
@@ -68,8 +85,9 @@ input {
 .claims {
   display: inline-block;
   text-align: left;
-  margin: 10px auto;
+  margin: 20px auto;
   vertical-align: top;
+  width: 80%;
 }
 
 h2 {
@@ -77,12 +95,12 @@ h2 {
 }
 
 .claims p {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .icons {
   display: inline-block;
-  margin: 10px 20px;
+  margin: 20px 20px;
   height: 60px;
   width: 60px;
 }
@@ -97,7 +115,8 @@ h2 {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
+
   .features {
     display: block;
     width: 100%;
@@ -116,5 +135,6 @@ h2 {
   .icons {
     display: none;
   }
+
 
 }
